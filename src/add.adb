@@ -34,40 +34,44 @@ package body add is
     ------------- body of tasks 
     -----------------------------------------------------------------------
 
-    -- Aqui se escriben los cuerpos de las tareas 
-    task body send_distance_signal is
+   -- Aqui se escriben los cuerpos de las tareas 
+   task body Distance is
       speed: Speed_Samples_Type;
       dist:  Distance_Samples_Type;
       security_dist: Distance_Samples_Type;
       next_delay: Time;
-    begin
-     loop	    
-        next_delay := Clock + milliseconds(300);
+   begin
+      loop	    
+         next_delay := Clock + milliseconds(300);
          
-	Starting_Notice("Inicia distancia de seguridad");
-	Reading_Speed (speed);
-	Reading_Distance (dist);
+         Starting_Notice("Inicia distancia de seguridad");
+         Reading_Speed (speed);
+         Reading_Distance (dist);
 
-	security_dist := Distance_Samples_Type((speed/10) ** 2);
+         security_dist := Distance_Samples_Type((speed/10) ** 2);
 	
-	Display_Distance (dist);
-	Display_Speed (speed);
+         Display_Distance (dist);
+         Display_Speed (speed);
 
-	if dist < (security_dist/3) then
-	    Starting_Notice ("PELIGRO COLISION");
-	    Light(On);
-	elsif dist < (security_dist/2) then
-	    Starting_Notice ("DISTANCIA IMPRUDENTE");
-	    Light(Off);
-	elsif dist < security_dist then
-	    Starting_Notice ("DISTANCIA INSEGURA");
-	    Light(Off);
-	end if;
+         if dist < (security_dist/3) then
+            Starting_Notice ("PELIGRO COLISION");
+            Light(On);
+         elsif dist < (security_dist/2) then
+            Starting_Notice ("DISTANCIA IMPRUDENTE");
+            Light(Off);
+         elsif dist < security_dist then
+            Starting_Notice ("DISTANCIA INSEGURA");
+            Light(Off);
+         end if;
 
- 	delay until next_delay;
-	Starting_Notice("Acaba distacia de seguridad");
-     end loop;
-    end send_distance_signal;
+         delay until next_delay;
+         Starting_Notice("Acaba distacia de seguridad");
+      end loop;
+   end Distance;
+   
+   task body Display is
+      
+      
 
     ----------------------------------------------------------------------
     ------------- procedure para probar los dispositivos 
