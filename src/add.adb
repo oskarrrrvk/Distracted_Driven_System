@@ -23,19 +23,135 @@ package body add is
     end Background;
     ----------------------------------------------------------------------
 
+    ----------------------------------------------------------------------
+    ----------------------- Protected Objects ----------------------------
+    ----------------------------------------------------------------------
+    
+    Protected body Measures is
+      function Calculate_Security_Distance return Distance_Samples_Type is
+      begin
+         return Distance_Samples_Type((speed/10) ** 2);
+      end Calculate_Security_Distance;
+      function Get_Distance return Distance_Samples_Type is
+      begin 
+         return distance;
+      end Get_Distance;
+      function Get_Speed return Speed_Samples_Type is
+      begin
+         return speed;
+      end Get_Speed;
+      procedure Set_Distance(dist: in Distance_Samples_Type) is
+      begin
+         distance := dist;
+      end Set_Distance;
+      procedure Set_Speed(spd: in Speed_Samples_Type) is
+      begin
+         speed := spd;
+      end Set_Speed;
+    end Measures;
+    
+    Protected body Sign is
+    
+       function Get_Cabeza return HeadPosition_Samples_Type is
+       begin
+          return cabeza;
+       end Get_Cabeza;
+    
+       procedure Set_Cabeza(cab: in HeadPosition_Samples_Type) is
+       begin
+          cabeza:= cab;
+       end Set_Cabeza;
+    
+       procedure Aviso_Cabeza(cab: in HeadPosition_Samples_Type; cont: in out Integer) is
+          v: devices.Volume;
+          begin
+          if cab(x)>=30 or cab(x)<= -30 then
+             cont:= cont + 1;
+             if cont>= 2 then
+                v:= 5;
+                Put_Line("CABEZA INCLINADA");
+                Beep(v);
+             end if;
+          else
+             cont:= 0;
+          end if;
+       end Aviso_Cabeza; 
+       
+       procedure Set_Position(i: in Integer)is
+       begin
+          pos:= i;
+       end Set_Position;
+       
+       function Get_Position return Integer is
+       begin
+          return pos;
+       end Get_Position;
+       
+       procedure Calculate_Dangerous_Distance(dist: in Distance_Samples_Type;       security_dist: in Distance_Samples_Type) is
+      begin
+         for i in 1..3 loop
+            if dist < (security_dist/Distance_Samples_Type(i)) then
+                Set_Position(i);
+            end if;
+         end loop;
+      end Calculate_Dangerous_Distance;
+      
+      procedure take_Alarm is
+      begin
+         if pos = 3 then
+	    Put_Line("PELIGRO COLISION");
+	 elsif pos = 2 then
+	    Put_Line("DISTANCIA IMPRUDENTE");
+	 elsif pos = 1 then
+	    Put_Line("DISTANCIA INSEGURA");
+	 else
+	    Put_Line("SEGURO ");
+	 end if;
+      end take_Alarm;
+      function Turn_Light return Light_States is
+      begin
+         if pos = 3 then
+            return On;
+         end if;
+         return Off;
+      end Turn_Light;
+   end Sign;    
+       
+    
     -----------------------------------------------------------------------
     ------------- declaration of tasks 
     -----------------------------------------------------------------------
 
     -- Aqui se declaran las tareas que forman el STR
+    --Type Volume is new integer range 1..5;
 
+    task body Head_Security is
+    cab: HeadPosition_Samples_Type;
+    next_delay: Time;
+    begin
+	loop
+	next_delay:= Clock + Milliseconds(400);
+	Reading_HeadPosition(cab);
+	Sign.Set_Cabeza(cab);
 
-    -----------------------------------------------------------------------
-    ------------- body of tasks 
-    -----------------------------------------------------------------------
+	delay until next_delay;
+        end loop;
+    end Head_Security;
+    
+    task body Display is
+    cont: Integer:= 0;
+    begin 
+       loop
+       Display_HeadPosition_Sample(Sign.Get_Cabeza);
+       Sign.Aviso_Cabeza(Sign.Get_Cabeza, cont);
+       Display_Distance (Measures.Get_Distance);
+       Display_Speed (Measures.Get_Speed);
+       Put_Line("");
+       Sign.take_Alarm;  
+       end loop;
+    end Display;
 
-   -- Aqui se escriben los cuerpos de las tareas 
-   task body Distance is
+    task body Distance is
       speed: Speed_Samples_Type;
       dist:  Distance_Samples_Type;
       security_dist: Distance_Samples_Type;
@@ -47,87 +163,20 @@ package body add is
          Starting_Notice("Inicia distancia de seguridad");
          Reading_Speed (speed);
          Reading_Distance (dist);
-
-         security_dist := Distance_Samples_Type((speed/10) ** 2);
-	
-         Display_Distance (dist);
-         Display_Speed (speed);
-
-         if dist < (security_dist/3) then
-            Starting_Notice ("PELIGRO COLISION");
-            Light(On);
-         elsif dist < (security_dist/2) then
-            Starting_Notice ("DISTANCIA IMPRUDENTE");
-            Light(Off);
-         elsif dist < security_dist then
-            Starting_Notice ("DISTANCIA INSEGURA");
-            Light(Off);
-         end if;
-
+         Measures.Set_Distance(dist);
+         Measures.Set_Speed(speed);
+	 security_dist := Measures.Calculate_security_distance;
+         Sign.Calculate_Dangerous_Distance(dist,security_dist);
          delay until next_delay;
          Starting_Notice("Acaba distacia de seguridad");
       end loop;
    end Distance;
-   
-   task body Display is
-      
-      
-
-    ----------------------------------------------------------------------
-    ------------- procedure para probar los dispositivos 
-    ----------------------------------------------------------------------
-    procedure Prueba_Dispositivos; 
-
-    Procedure Prueba_Dispositivos is
-        Current_V: Speed_Samples_Type := 0;
-        Current_H: HeadPosition_Samples_Type := (+2,-2);
-        Current_D: Distance_Samples_Type := 0;
-        Current_O: Eyes_Samples_Type := (70,70);
-        Current_E: EEG_Samples_Type := (1,1,1,1,1,1,1,1,1,1);
-        Current_S: Steering_Samples_Type := 0;
-    begin
-         Starting_Notice ("Prueba_Dispositivo");
-
-         for I in 1..120 loop
-         -- Prueba distancia
-            --Reading_Distance (Current_D);
-            --Display_Distance (Current_D);
-            --if (Current_D < 40) then Light (On); 
-            --                    else Light (Off); end if;
-
-         -- Prueba velocidad
-            --Reading_Speed (Current_V);
-            --Display_Speed (Current_V);
-            --if (Current_V > 110) then Beep (2); end if;
-
-         -- Prueba volante
-            Reading_Steering (Current_S);
-            Display_Steering (Current_S);
-            if (Current_S > 30) OR (Current_S < -30) then Light (On);
-                                                     else Light (Off); end if;
-
-         -- Prueba Posicion de la cabeza
-            --Reading_HeadPosition (Current_H);
-            --Display_HeadPosition_Sample (Current_H);
-            --if (Current_H(x) > 30) then Beep (4); end if;
-
-         -- Prueba ojos
-            --Reading_EyesImage (Current_O);
-            --Display_Eyes_Sample (Current_O);
-
-         -- Prueba electroencefalograma
-            --Reading_Sensors (Current_E);
-            --Display_Electrodes_Sample (Current_E);
-   
-         delay until (Clock + To_time_Span(0.1));
-         end loop;
-
-         Finishing_Notice ("Prueba_Dispositivo");
-    end Prueba_Dispositivos;
 
 
 begin
-  Starting_Notice ("Programa Principal");
+   Starting_Notice ("Programa Principal");
+ 
+   Finishing_Notice ("Programa Principal");
 end add;
 
 
