@@ -1,0 +1,1439 @@
+
+ TSIM/ERC32 - remote SPARC simulator, version 1.0.10 (evaluation version)
+
+ Copyright (C) 2001, Gaisler Research - all rights reserved.
+ For latest updates, go to http://www.gaisler.com/
+ Comments or bug-reports to tsim@gaisler.com
+
+libreadline.so.3: cannot open shared object file: No such file or directory
+serial port A on stdin/stdout
+allocated 4096 K RAM memory
+allocated 2048 K ROM memory
+section: .text at 0x2000000, size 234064 bytes
+section: .data at 0x2039250, size 12956 bytes
+tsim> resuming at 0x02000000
+
+[ 0.004478200] >>> Cabeza
+[ 0.018790200] --- End cabeza
+[ 0.035975200] >>> Volante
+[ 0.051434800] --- End volante
+[ 0.067276300] >>> Distancia
+[ 0.090192800] --- End distacia
+[ 0.106546200] >>> Display.
+[ 0.120882200] >>> Riesgos
+[ 0.134706200] >>> Programa Principal
+[ 0.154162200] --- Programa Principal
+[ 0.271278100] ............Light: _off_
+[ 0.292292300] --- End riesgo
+[ 0.307621300] >>> Riesgos
+[ 0.381487500] >>> Distancia
+[ 0.404277700] >>> Volant
+[ 0.417558700] >>> Cabeza
+[ 0.431902300] --- End cabezae
+[ 0.449419400] --- End volante
+[ 0.465260800] --- End distacia
+[ 0.481644900] ............Light: _off_
+[ 0.502689900] --- End riesgo
+[ 0.518018500] >>> Riesgos
+[ 0.668043100] ............Light: _off_
+[ 0.689057200
+[ 0.696194200] >>> Distancia
+[ 0.719110500] --- End distacia] --- End riesgo
+[ 0.743656100] >>> Riesgos
+[ 0.797116200] >>> Volante
+[ 0.812576900] --- End volante
+[ 0.830234000] >>> Cabeza
+[ 0.844548700] --- End cabeza
+[ 0.893591000] ............Light: _off_
+[ 0.914605600] --- End riesgo
+[ 0.929935200] >>> Riesgos
+[ 1.010404700] >>> Distancia
+[ 1.033298400] --- End distacia
+[ 1.079946000] ............Light: _off_
+[ 1.100960300] --- End riesgo
+[ 1.1162
+[ 1.120896900] ............# HeadPosition:  3 0
+[ 1.149434900] ......
+[ 1.160667500] >>> Volante
+[ 1.176160300] --- End volante......# Distance:  80
+[ 1.205390200] ............# Speed:  80
+[ 1.227125600] >>> SEGURO 
+[ 1.
+[ 1.243473500] >>> Cabeza
+[ 1.257819100] --- End cabeza240912600] ............# Steering:  10
+[ 1.293840700] --- End display
+[ 1.309681900] >>> Display.89
+[ 1.325042200] >>> Distancia
+[ 1.347965800] --- End distacia200] >>> Riesgos
+[ 1.372511100] ............Light: _off_
+[ 1.393556300] --- End riesgo
+[ 1.408885300] >>> Riesgos
+[ 1.523855300] >>> Volante
+[ 1.539317000] --- End volante
+[ 1.558895700] ............Light: _off_
+[ 1.579909700] --- End riesgo
+[ 1.595238700] >>> Riesgos
+[ 1.639252700] >>> Distancia
+[ 1.662045800] >>> Cabeza
+[ 1.676359700] --- End cabeza
+[ 1.691688700] --- End distacia
+[ 1.745249500] ............Light: _off_
+[ 1.766264200] --- End riesgo
+[ 1.781593400] >>> Riesgos
+[ 1.887012200] >>> Volante
+[ 1.902474700] --- End volante
+[ 1.931603800] ............Light: _off_
+[
+[ 1.953611700] >>> Distancia
+[ 1.976540200] --- End distacia 1.952618500] --- End riesgo
+[ 2.007229000] >>> Riesgos
+[ 2.074689400] >>> Cabeza
+[ 2.089004300] --- End cabeza
+[ 2.157239400] ............Light: _off_
+[ 2.178253300] --- End riesgo
+[ 2.193582900] >>> Riesgos
+[ 2.250169000] >>> Volante
+[ 2.265630700] --- End volante
+[ 2.281471900] >>> Distancia
+[ 2.304402100] --- End distacia
+[ 2.323471300] ............# HeadPosition:  1 3
+[ 2.351977200] ............# Distance:  55
+[ 2.376599000] ............# Speed:  95
+[ 2.398334900] >>> DISTANCIA INSEGURA
+[ 2.417754800] ............# Steering:  25
+[ 2.441006700] --- End display
+[ 2.456847400] >>> Display.
+[ 2.471183900] ............Ligh
+[ 2.487567400] >>> Cabeza
+[ 2.501913000] --- End cabezat: ^ON^
+[ 2.521395900] --- End riesgo
+[ 2.536724800] >>> Riesgos
+[ 2.595683100] >>> Distancia
+[ 2.618476400] >>> Volante
+[ 2.633938000] --- End volante
+[ 2.649778600] --- End distacia
+[ 2.686654500] ............Light: ^ON^
+[ 2.707157400] --- End riesgo
+[ 2.722487000] >>> Riesgos
+[ 2.872429500] ............Light: ^ON^
+[ 2.892931700]
+[ 2.900580400] >>> Cabeza
+[ 2.914926300] --- End cabeza
+[ 2.930255500] >>> Distancia
+[ 2.953184700] --- End distacia --- End riesgo
+[ 2.97721
+[ 2.982338200] >>> Volante
+[ 2.997830000] --- End volante8300] >>> Riesgos
+[ 3.127160400] ............Light: ^ON^
+[ 3.147663000] --- End riesgo
+[ 3.162992200] >>> Riesgos
+[ 3.244467100] >>> Distancia
+[ 3.267376000] --- End distacia
+[ 3.313286500] >>> Cabeza
+[ 3.327601800] --- End cabeza
+[ 3.3
+[ 3.346002900] >>> Volante
+[ 3.361495800] --- End volante42931000] ............Light: _off_
+[ 3.395309700] --- End riesgo
+[ 3.410639000] >>> Riesgos
+[ 3.470636800] ............# HeadPosition:  35 0
+[ 3.499654800] ............# Distance:  25
+[ 3.524276000] ............# Speed:  105
+[ 3.546521900] >>> PELIGRO COLISION
+[ 3.564917500] >>> Distancia
+[ 3.587857500] --- End distacia
+[ 3.604210100] ............# Steering:  5
+[ 3.626951600] --- End display
+[ 3.642793100] >>> Display.
+[ 3.657129200] ............Light: _off_
+[ 3.678173900] --- End riesgo
+[ 3.693502800] >>> Riesgos
+[ 3.709190800] >>> Volante
+[ 
+[ 3.726158300] >>> CabezaCABEZA INCLINADA
+
+[ 3.749113300] --- End cabeza3.724653500] --- End volante
+[ 3.843120700] ............%BEEEEEEEEEEP 5
+[ 3.865676800] ...........
+[ 3.879469800] >>> Distancia
+[ 3.902409700] --- End distacia.Light: _off_
+[ 3.925984600] !!!! Brake activated !!!!
+[ 3.947511500] --- End riesgo
+[ 3.962840800] >>> Riesgos
+[ 4.072346500] >>> VolanteVOLANTAZO BRUSCO
+
+[ 4.096338200] --- End volante
+[ 4.112295300] ............%BEEP 1
+[ 4.130754700] .
+[ 4.139427700] >>> CabezaCABEZA INCLINADA
+
+[ 4.162381600] --- End cabeza...........Light: _off_
+[ 4.190
+[ 4.194153000] >>> Distancia
+[ 4.217088700] --- End distacia088200] --- End riesgo
+[ 4.244705600] >>> Riesgos
+[ 4.394173000] ............%BEEP 1
+[ 4.412632400] ............Light: _off_
+[ 4.
+[ 4.436176400] >>> Volante
+[ 4.451669400] --- End volante433647500] --- End riesgo
+[ 4.480310900] >>> Riesgos
+[ 4.508364800] >>> Distancia
+[ 4.531262800] --- End distacia
+[ 4.552103300] >>> CabezaCABEZA INCLINADA
+
+[ 4.575027400] --- End cabeza
+[ 4.630092100] ............%BEEEEEEP 3
+[ 4.6505998
+[ 4.656712800] ............# HeadPosition:  47 3
+[ 4.685761800] ............# Distance:  60
+[ 4.710383700] ............# Speed:  110
+[ 4.732631600] >>> DISTANCIA INSEGURA
+[ 4.752051100] ............# Steering:  35
+[ 4.775303200] --- End display
+[ 4.791144000] >
+[ 4.799847800] >>> Volante
+[ 4.815341200] --- End volante
+[ 4.831182300] >>> Distancia
+[ 4.854111400] --- End distacia>> Display.00] ............Light: _off_
+[ 4.890998400] --- End riesgo
+[ 4.906327200] >>> Riesgos
+[ 4.964672300] >>> CabezaCABEZA INCLINADA
+
+[ 4.987595500] --- End cabeza
+[ 5.056107800] ............%BEEEEEEP 3
+[ 5.076615900] ............Light: _off_
+[ 5.097630000] --- End riesgo
+[ 5.112959200] >>> Riesgos
+[ 5.145393500] >>> Distancia
+[ 5.168184500] >>> VolanteVOLANTAZO BRUSCO
+
+[ 5.192175500] --- End volante
+[ 5.208047100] --- End distacia
+[ 5.262414200] ............%BEEP 1
+[ 5.280873500] ............Light: _off_
+[ 5.301888300] --- End riesgo
+[ 5.317217500] >>> Riesgos
+[ 5.377316800] >>> CabezaCABEZA INCLINADA
+
+[ 5.400240000] --- End cabeza
+[ 5.459574000] >>> Distancia
+[ 5.482472900] --- End distacia
+[ 5.498825600] ............%BEEP 1
+[ 5.517317200] ............
+[ 5.531621800] >>> Volante
+[ 5.547114200] --- End volanteLight: _off_
+[ 5.569669600] --- End riesgo
+[ 5.584998800] >>> Riesgos
+[ 5.734792800] ............%BEEEEEEP 3
+[ 5.755300200] ............Light: _o
+[ 5.774212800] >>> Distancia
+[ 5.790772300] >>> CabezaCABEZA INCLINADA
+
+[ 5.813695500] --- End cabeza
+[ 5.834928500] --- End distaciaff_
+[ 5.853387300] --- End riesgo
+[ 5.868716200
+[ 5.875883900] ............# HeadPosi
+[ 5.895339900] >>> Volante
+[ 5.910834000] --- End volantetion:  46 0
+[ 5.936268500] ............# Distance:  65
+[ 5.960889700] ............# Speed:  120
+[ 5.983136700] >>> DISTANCIA IMPRUDENTE
+[ 6.003579900] ............# Steering:  2
+[ 6.026321100] --- End display
+[ 6.042162200] >>> Display.] >>> Riesgos
+[ 6.063153800] ............%BEEEEEEP 3
+[ 6.08369
+[ 6.088781400] >>> Distancia
+[ 6.111714600] --- End distacia2700] ............Light: _off_
+[ 6.143992700] --- End riesgo
+[ 6.159322300] >>> Riesgos
+[ 6.203416600] >>> CabezaCABEZA INCLINADA
+
+[ 6.226340600] --- End cabeza
+[ 6.258528300] >>> Volante
+[ 6.273990000] --- End volante
+[ 6.309103300] ............%BEEEEEEP 3
+[ 6.329610700] ............Light: _off_
+[ 6.350625500] --- End riesgo
+[ 6.365954700] >>> Riesgos
+[ 6.402992700] >>> Distancia
+[ 6.425898600] --- End distacia
+[ 6.515735700] ............%BEEEEEEP 3
+[ 6.536243100] ............Light: _off_
+[ 6.557258200] --- End riesgo
+[ 6.572587700] >>> Riesgos
+[ 6.616061100] >>> CabezaCABEZA INCLINADA
+
+[ 6.638985900] --- End cabeza
+[ 6.654345900] >>> Volante
+[ 6.669840200] --- End volante
+[ 6.717172700] >>> Distancia
+[ 6.740083500] --- End distacia
+[ 6.756436800] ............%BEEEEEEP 3
+[ 6.776975600] ............Light: _off_
+[ 6.797990000] --- End riesgo
+[ 6.813318800] >>> Riesgos
+[ 6.963036500] ............%BEEEEEEP 3
+[ 6.983544000] ............Light: _off_
+[ 7.004558700] --- End ri
+[ 7.017839400] >>> Vo
+[ 7.029103300] >>> CabezaCABEZA INCLINADA
+
+[ 7.052059400] --- End cabezalante
+[ 7.071655200] --- End volante
+[ 7.087496400] >>> Distancia
+[ 7.110437800] --- End distacia
+[ 7.126790500] ............# HeadPosition:  47 3
+[ 7.155840600] ............# Distance:  60
+[ 7.180462100] ............# Speed:  120
+[ 7.202709000] >>> DISTANCIA IMPRUDENTE
+[ 7.223152400] ............# Steering:  0
+[ 7.245892400] --- End display
+[ 7.261733800] >>> Display.esgo
+[ 7.278117200] >>> Riesgos
+[ 7.401720300] >>> Distancia
+[ 7.424516700] >>> Volante
+[ 7
+[ 7.441998500] >>> CabezaCABEZA INCLINADA
+
+[ 7.464953800] --- End cabeza.439981000] --- End volante
+[ 7.494138600] --- End distacia
+[ 7.510522500] ............%BEEEEEEP 3
+[ 7.531061000] ............Light: _off_
+[ 7.552075400] --- End riesgo
+[ 7.567404200] >>> Riesgos
+[ 7.715913600] >>> Distancia
+[ 7.738824500] --- End distacia
+[ 7.755177100] ............%BEEEEEEP 3
+[ 7.775716800] ........
+[ 7.787973500] >>> Volante
+[ 7.803468600] --- End volante....Light: _off_
+[ 7.828071700] --- End riesgo
+[ 7.843401200] >>> Rie
+[ 7.855176500] >>> CabezaCABEZA INCLINADA
+
+[ 7.878132200] --- End cabezasgos
+[ 7.993181500] ............%BEEEEEEP 3
+[ 8.013688900] ............Light
+[ 8.030554100] >>> Distancia
+[ 8.053496500] --- End distacia: _off_
+[ 8.074003800] --- End riesgo
+[ 8.089332500] >>> Riesgos
+[ 8.151160600] >>> Volante
+[ 8.166624000] --- End volante
+[ 8.238951000] ............%BEEEEEEEEEEP 5
+[ 8.26150630
+[ 8.268131000] >>> CabezaCABEZA INCLINADA
+
+[ 8.291087800] --- End cabeza
+[ 8.306448400] ............# HeadPosition:  45 0
+[ 8.335498000] ...
+[ 8.345195600] >>> Distancia
+[ 8.368137500] --- End distacia.........# Distance:  30
+[ 8.399414900] ............# Speed:  115
+[ 8.421661700] >>> PELIGRO COLISION
+[ 8.440057100] ............# Steering:  0
+[ 8.462797800] --- End display
+[ 8.478639200] >>> Display.0] ............Light: _off_
+[ 8.507360400]
+[ 8.515009200] >>> Volante
+[ 8.530503400] --- End volante !!!! Brake activated !!!!
+[ 8.560221800] --- End riesgo
+[ 8.575550500] >>> Riesgos
+[ 8.659406400] >>> Distancia
+[ 8.682191300] >>> CabezaCABEZA INCLINADA
+
+[ 8.705117000] --- End cabeza
+[ 8.720477700] --- End distacia
+[ 8.736861900] ............%BEEEEEEEEEEP 5
+[ 8.759447700] ............Light: _off_
+[ 8.780457400] !!!! Brake activated !!!!
+[ 8.801983900] --- End riesgo
+[ 8.817313100] >>> Riesgos
+[ 8.878120700] >>> Volante
+[ 8.893584300] --- End volante
+[ 8.966930400
+[ 8.974067100] >>> Distancia
+[ 8.997010500] --- End distacia] ............%BEEEEEEEEEEP 5
+[ 9.028781900] ............Light: _off_
+[ 9.049792300] !!!! Brake activated !!!!
+[ 9.071318500] --- End riesgo
+[ 9.086647400] >
+[ 9.095352100] >>> CabezaCABEZA INCLINADA
+
+[ 9.118308300] --- End cabeza>> Riesgos
+[ 9.236278
+[ 9.241879000] >>> Volante
+[ 9.257374900] --- End volante300] ............%BEEEEEEEEEEP
+[ 9.288575800] >>> Distancia
+[ 9.311514700] --- End distacia 5
+[ 9.329466800] ............Light: _off_
+[ 9.350476800] !!!! Brake activated !!!!
+[ 9.372003700] --- End riesgo
+[ 9.387333300] >>> Riesgos
+[ 9.492428400] ............# H
+[ 9.508269400] >>> CabezaCABEZA INCLINADA
+
+[ 9.531225500] --- End cabezaeadPosition:  47 3
+[ 9.559763700] ............# Distance:  45
+[ 9.584385000] ............# Speed: 
+[ 9
+[ 9.605346000] >>> Volante
+[ 9.620841600] --- End volante.603298100] >>> Distancia
+[ 9.657567800] --- End distacia 112
+[ 9.677265000] >>> DISTANCIA INSEGURA
+[ 9.696684500] ............# Steering:  0
+[ 9.719424900] --- End display
+[ 9.735265700] >>> Display.
+[ 9.749601800] ............%BEEEEEEP 3
+[ 9.770140700] ............Light: _off_
+[ 9.791154800] --- End riesgo
+[ 9.806483700] >>> Riesgos
+[ 9.920945300] >>> CabezaCABEZA INCLINADA
+
+[ 9.943871200] --- End cabeza
+[ 9.959231600] >>>
+[ 9.968959400] >>> Volante
+[ 9.984453900] --- End volante Distancia
+[ 10.013488800] --- End distacia
+[ 10.030353800] ............%BEEEEP 2
+[ 10.050380500] ............Light: _off_
+[ 10.071906700] --- End riesgo
+[ 10.087747700] >>> Riesgos
+[ 10.237623000] ............%BEEEEP 2
+[ 10.257618500] ............Light: _off_
+[ 10.279145100] --- End riesgo
+[ 10.294986500] >>>
+[ 10.305225800] >>> Distancia
+[ 10.32
+[
+[ 10.333750000] >>> Cabeza
+[ 10.348608800] --- End cabeza 10.332725800] >>> Volante
+[ 10.379432300] --- End volante8660600] --- End distacia Riesgos
+[ 10.444928900] ............Light: ^ON^
+[ 10.465943600] --- End riesgo
+[ 10.481784200] >>> Riesgos
+[ 10.619949300] >>> Distancia
+[ 10.643356900] --- End distacia
+[ 10.660222500] ............Light: ^ON^
+[ 10.681267600] --- End riesgo
+[ 10.697108900] >>> Riesgos
+[ 10.727124900] >>> Volante
+[ 10.74
+[ 10.747165500] >>> Cabeza
+[ 10.762025100] --- End cabeza3100800] --- End volante
+[ 10.790154100] ............# HeadPosition:  3 0
+[ 10.819203800] ............# Distance:  90
+[ 10.844337000] ............# Speed:  70
+[ 10.866585000] >>> DISTANCIA INSEGURA
+[ 10.886516900] ............# Steering:  0
+[ 10.909769400] --- End display
+[ 10.926123000] >
+[ 10.935338700] >>> Distancia
+[ 10.958778400] --- End distacia>> Display.
+[ 10.981275400] ............Light: ^ON^
+[ 11.002320900] --- End riesgo
+[ 11.018161800] >>> Riesgos
+[ 11.090792300] >>> Volante
+[ 11.106768900] --- End volante
+[ 11.160353100] >>> Cabeza
+[ 11.175180500] --- End cabeza
+[ 11.191021500] ............Light: ^ON^
+[ 11.212066700] --- End riesgo
+[ 11.227907600] >>> Riesgos
+[ 11.250061700] >>> Distancia
+[ 11.273472300] --- End distacia
+[ 11.377837100] ............Light: ^ON^
+[ 11.398851900] --- End riesgo
+[ 11.414692900] >>> Riesgos
+[ 11.454461200] >>> Volante
+[ 11.470436200] --- End volante
+[ 11.564762300] >
+[ 11.573947700] >>> Cabeza
+[ 11.588807300] --- End cabeza>> Distancia
+[ 11.618873600] --- End distacia
+[ 11.635738700] ............Light: ^ON^
+[ 11.656783900] --- End riesgo
+[ 11.672624500] >>> Riesgos
+[ 11.818129500] >>> Volante
+[ 11.834104400] --- End volante
+[ 11.850457800] ............Light: ^ON^
+[ 11.871503300] --- End riesgo
+[ 11.887344300] >>> Riesgos
+[ 11.910079500] >>> Distancia
+[ 11.933489800] --- End distacia
+[ 11.9807272
+[ 11.987352600] >>> Cabeza
+[ 12.002210500] --- End cabeza00] ............# HeadPosition: -1 3
+[ 12.040632800] ............# Distance:  65
+[ 12.065766000] ............# Speed:  85
+[ 12.088014100] >>> DISTANCIA INSEGURA
+[ 12.107946000] ............# Steering:  15
+[ 12.131710500] --- End display
+[ 12.148063800] >>> Display.
+[ 12.162911100] ............Light: ^O
+[ 12.182368100] >>> Volante
+[ 12.198374600] --- End volanteN^
+[ 12.216322000] 
+[ 12.224994900] >>> Distancia
+[ 12.248441700] --- End distacia--- End riesgo
+[ 12.272474600] >>> Riesgos
+[ 12.400538900] >>> Cabeza
+[ 12.415367000] --- End cabeza
+[ 12.431208300] ............Light: ^ON^
+[ 12.452253400] --- End riesgo
+[ 12.468094300] >>> Riesgos
+[ 12.5397182
+[ 12.546342910] >>> Volante
+[ 12.562348800] --- End volante00] >>> Distancia
+[ 12.595492000] --- End distacia
+[ 12.618023100] ............Light: ^ON^
+[ 12.639037400] --- End riesgo
+[ 12.654878700] >>> Riesgos
+[ 12.804820000] .
+[ 12.814005400] >>> Cabeza
+[ 12.828864510] --- End cabeza...........Light: ^ON^
+[ 12.856540000] --- End riesgo
+[ 12.872381600] >>> Riesgos
+[ 12.886769200] >>> Distancia
+[ 12.910009000] >>> Volante
+[ 12.925985400] --- End volante
+[ 12.942338400] --- End distacia
+[ 13.022310500] ............Light: ^ON^
+[ 13.043324900] --- End riesgo
+[ 13.059165900] >>> Riesgos
+[ 13.162365300] ............# HeadPosition:  20 0
+[ 13.191896100] ...
+[ 13.202105700] >>> Distancia
+[ 1
+[ 13.227578400] >>> Cabeza
+[ 13.242439600] --- End cabeza3.225561500] --- End distacia..
+[ 13.274152200] >>> Volante
+[ 13.290159800] --- End volante.......# Distance:  40
+[ 13.320413400] ............# Speed:  100
+[ 13.343171500] >>> PELIGRO COLISION
+[ 13.362078900] ............# Steering:  5
+[ 13.385331500] --- End display
+[ 13.401684900] >>> Display.
+[ 13.416532200] ............Light: _off_
+[ 13.438089400] --- End riesgo
+[ 13.453930000] >>> Riesgos
+[ 13.516829000] >>> Distancia
+[ 13.540251900] --- End distacia
+[ 13.603941700] ............Light: _off_
+[ 13.625468500] --- End 
+[ 13.
+[ 13.641309400] >>> CabezaCABEZA INCLINADA
+
+[ 13.664777700] --- End cabeza638237700] >>> Volante
+[ 13.693585300] --- End volanteriesgo
+[ 13.713010700] >>> Riesgos
+[ 13.831521200] >>> Distancia
+[ 13.854944900] --- End distacia
+[ 13.871809900] ............%BEEEEEEEEEEP 5
+[ 13.894909000] ............Light: _off_
+[ 13.916431200] !!!! Brake activated !!!!
+[ 13.938469200] --- End riesgo
+[ 13.954310200] >>> Riesgos
+[ 14.041277200] >>> Volant
+[ 14.055069900] >>> CabezaCABEZA INCLINADA
+
+[ 14.078539200] --- End cabezaeVOLANTAZO BRUSCO
+
+[ 14.105133200] --- End volante
+[ 14.121518100] ............%BEEP 1
+[ 14.140520
+[ 14.146633300] >>> Distancia
+[ 14.170086800] --- End distacia100] ............Light: _off_
+[ 14.202365900] --- End riesgo
+[ 14.218206500] >>> Riesgos
+[ 14.367675400] ............%BEEP 1
+[ 14.386647300] ............Light: _off_
+[ 14.408173500]
+[ 14.416334800] ............# HeadPosition:  47 3
+[ 14.444309800] >>> Volante
+[ 14.460285200]
+[ 14.468480000] >>> CabezaCABEZA INCLINADA
+
+[ 14.491948000] --- End cabeza --- End volante
+[ 14.516012200] >>> Distancia
+[ 14.539456800] --- End distacia
+[ 14.557308100] ............# Distance:  60
+[ 14.582441500] ............# Speed:  110
+[ 14.605201500] >>> DISTANCIA INSEGURA
+[ 14.625132400] ............# Steering:  35
+[ 14.648897700] --- End display
+[ 14.665250600] >>> Display. --- End riesgo
+[ 14.687779300] >>> Riesgos
+[ 14.807991100] >>> Volante
+[ 14.823966600] --- End volante
+[ 14.840319800] >>> Distancia
+[ 14.863765000] --- End distacia
+[
+[ 14.881653900] >>> CabezaCABEZA INCLINADA
+
+[ 14.905123000] --- End cabeza 14.880630100] ............%BEEEEEEP 3
+[ 14.941022500] ............Light: _off_
+[ 14.962548700] --- End riesgo
+[ 14.978389300] >>> Riesgos
+[ 15.128184400] ............%BEEEEEEP 3
+[ 15.149204
+[ 15.155316800] >>> Distancia
+[ 15.172389200] >>> VolanteVOLANTAZO BRUSCO
+
+[ 15.196894500] --- End volante
+[ 15.219146200] --- End distacia200] ............Light: _off_
+[ 15.251424300] --- End riesgo
+[ 15.267265600] >>> Riesgos
+[ 15.294841800] >>> CabezaCABEZA INCLINADA
+
+[ 15.318278900] --- End cabeza
+[ 15.416720600] ............%BEEP 1
+[ 15.435692400] ............Light: _off_
+[ 15.457219300] --- End r
+[ 15.470500100] >>> Distancia
+[ 15.493944900] --- End distaciaiesgo
+[ 15.513369900] >>> Riesgos
+[ 15.536057900] >>> Volante
+[ 15.552032700] --- End volante
+[ 15.663155300] ............%BEE
+[ 15.680019900] ............# HeadPosition:  45 0
+[ 15.708011500] >>> CabezaCABEZA INCLINADA
+
+[ 15.731449600] --- End cabeza
+[ 15.748293000] ............# Distance:  70
+[ 15.773427200] .......
+[ 15.785684500] >>> Distancia
+[ 15.809137300] --- End distacia.....# Speed:  115
+[ 15.836504300] >>> DISTANCIA IMPRUDENTE
+[ 15.857459900] ............# Steering:  2
+[ 15.880712500] --- End display
+[ 15.
+[ 15.900137800] >>> Volante
+[ 15.916145000] --- End volante897066100] >>> Display.EEEEP 3
+[ 15.948428600] ............Light: _off_
+[ 15.969960200] --- End riesgo
+[ 15.985801500] >>> Riesgos
+[ 16.100407000] >>> Distancia
+[ 16.123705600] >>> CabezaCABEZA INCLINADA
+
+[ 16.147146500] --- End cabeza
+[ 16.163019500] --- End distacia
+[ 16.179915400] ............%BEEEEEEP 3
+[ 16.200966100] ............Light: _off_
+[ 16.222492200] --- End riesgo
+[ 16.238333400] >>> Riesgos
+[ 16.263837500] >>> Volante
+[ 16.279813500] --- End volante
+[ 16.388114600] ............%BEEEEEEP 3
+[ 16.4091344
+[ 16.415759000] >>> Distancia
+[ 16.439212200] --- End distacia00] ............Light: _off_
+[ 16.470978700] --- End riesgo
+[ 16.486820000] >>> Riesgos
+[ 16.536866200] >>> CabezaCABEZA INCLINADA
+
+[ 16.560303102] --- End cabeza
+[ 16.627505800] >>> Volante
+[ 16.643480600] --- End volante
+[ 16.659833400] ............%BEEEEEEP 3
+[ 16.680884400] ............Light: _off_
+[ 16.702410800] --- End riesgo
+[ 16.718252400] >>> Ries
+[ 16.731051900] >>> Distancia
+[ 16.754505000] --- End distaciagos
+[ 16.868046200] ............%BEEEEEEP 3
+[ 16.889065900] ............Light: _off_
+[ 16.910592400] --- End riesgo
+[ 16.926433700] >>> Riesgos
+[ 16.9437275
+[ 16.950352300] >>> CabezaCABEZA INCLINADA
+
+[ 16.974010600] --- End cabeza00]
+[ 16.991419600] >>> Volante
+[ 17.007424900] --- End volante ............# HeadPosition:  47 3
+[
+[ 17.046141000] >>> Distancia
+[ 17.069593000] --- End distacia 17.045147700] ............# Distance:  70
+[ 17.110598500] ............# Speed:  120
+[ 17.133357300] >>> DISTANCIA IMPRUDENTE
+[ 17.154312300] ............# Steering:  0
+[ 17.177564900] --- End display
+[ 17.193918200] >>> Display.
+[ 17.208766100] ............%BEEEEEEP 3
+[ 17.229816400] ............Light: _off_
+[ 17.251342600] --- End riesgo
+[ 17.267183600] >>> Riesgos
+[ 17.355118400] 
+[ 17.363791200] >>> CabezaCABEZA INCLINADA
+
+[ 17.387259900] --- End cabeza>>> Volante
+[ 17.410435200] --- End volante
+[ 17.426788300] >>> Distancia
+[ 17.450240500] --- End distacia
+[ 17.467106000] ............%BEEEEEEP 3
+[ 17.488156300] ............Light: _off_
+[ 17.509682900] --- End riesgo
+[ 17.525523900] >>> Riesgos
+[ 17.675318100] ............%BEEEEEEP 3
+[ 17.696337700] ............Light: _off_
+[ 17.717864000] --- End riesgo
+[ 17.733705000]
+[ 17.741897500] >>> Distancia
+[ 17.758969000] >>> Volante
+[ 17
+[ 17.777474300] >>> CabezaCABEZA INCLINADA
+
+[ 17.800941900] --- End cabeza.774945000] --- End volante
+[ 17.836515500] --- End distacia >>> Riesgos
+[ 17.883259600] ............%BEEEEEEEEEEP 5
+[ 17.906327500] ............Light: _off_
+[ 17.927850100] !!!! Brake activated !!!!
+[ 17.949888100] --- End riesgo
+[ 17.965728800] >>> Riesgos
+[ 18.056619600] >>> Distancia
+[ 18.080045200] --- End distacia
+[ 18.115347400
+[ 18.122996700] >>> Volante
+[ 18.139002300] --- End volante] ............%BEEEEEEEEEEP 5
+[ 18.170774500] ............Light: _off
+[ 18.191223600] >>> CabezaCABEZA INCLINADA
+
+[ 18.214692300] --- End cabeza
+[ 18.230563900] ............# HeadPosition:  47 1
+[ 18.260125100] ............# Distance:  30
+[ 18.285258600] ............# Speed:  110
+[ 18.308016800] >>> PELIGRO COLISION
+[ 18.326924400] ............# Steering:  0
+[ 18.350176200] --- End display
+[ 18.3665
+[ 18.371649600] >>> Distancia
+[ 18.395104700] --- End distacia29500] >>> Display._
+[ 18.422779600] !!!! Brake activated !!!!
+[ 18.444817900] --- End riesgo
+[ 18.460658500] >>> Riesgos
+[ 18.486695700] >>> Volante
+[ 18.502671200] --- End volante
+[ 18.604410600] >>> CabezaCABEZA INCLINADA
+
+[ 18.627848000] --- End cabeza
+[ 18.643720700] ............%BEEEEEEEEEEP 5
+[ 18.666819000] ............Light: _of
+[ 18.686756000] >>> Distancia
+[ 18.710212000] --- End distaciaf_
+[ 18.728666700] !!!! Brake activated !!!!
+[ 18.750704600] --- End riesgo
+[ 18.766545200] >>> Riesgos
+[ 18.850364800] >>> Volante
+[ 18.866340200] --- End volante
+[ 18.916088600] ............%BEEEEEEEEEEP 5
+[ 18.939156800] ............Light: _off_
+[ 18.960679400] !!!! Brake activated !!!!
+[ 18.982717700] --- End riesgo
+[ 18.9
+[ 19.002142300] >>> Distancia
+[ 19.019184200] >>> CabezaCABEZA INCLINADA
+
+[ 19.042620600] --- End cabeza
+[ 19.064369800] --- End distacia98559100] >>> Riesgos
+[ 19.148190000] ............%BEEEEEEEEEEP 5
+[ 19.171257900] ............Light: _off_
+[ 19.192780200] !!!! Brake activated !!!!
+[ 19.214253700] >>> Volante
+[ 19.230260700] --- End volante
+[ 19.246801600] --- End riesgo
+[ 19.262642900] >>> Riesgos
+[ 19.316866200] >>> Distancia
+[ 19.340285200] --- End distacia
+[ 19.412424100] .
+[ 19.421609400] .....
+[ 19.432873000] >>> CabezaCABEZA INCLINADA
+
+[ 19.456340700] --- End cabeza.......# HeadPosition:  47 3
+[ 19.490510800] ............# Distance:  45
+[ 19.515644100] ............# Speed:  112
+[ 19.538403400] >>> DISTANCIA IMPRUDENTE
+[ 19.559359000] ............# Steeri
+[ 19.578303200] >>> Volante
+[ 19.594309400] --- End volanteng:  1
+[ 19.614971300] --- End display
+
+[ 19.631835900] >>> Distancia
+[ 19.655281300] --- End distacia[ 19.671643200] >>> Display............%BEEEEEEP 3
+[ 19.698317300] ............Light: _off_
+[ 19.719843900] --- End riesgo
+[ 19.735684900] >>> Riesgos
+[ 19.846060100] >>> CabezaCABEZA INCLINADA
+
+[ 19.869497300] --- End cabeza
+[ 19.885466100] ............%BEEEEEEP 3
+[ 19.906485900] ............Light: _off_
+[ 19.928012800] --- End rie
+[ 19.942318000] >>> Volante
+[ 19.958324200] --- End volante
+[ 19.974677502] >>> Distancia
+[ 19.998122000] --- End distaciasgo
+[ 20.016523000] >>> Riesgos
+[ 20.166321600] ............%BEEEEEEP 3
+[ 20.187341000] ............Light: _off_
+[ 20.208867500] --- End riesgo
+[ 20.224708700] >>> Riesgos
+[ 20.259216900] >>> Cabeza
+[ 20.274045200] --- End cabeza
+[ 20.289886700] >>> Distancia
+[ 20.306950300] >>> Volante
+[ 20.322925300] --- End volante
+[ 20.345134500] --- End distacia
+[ 20.374638300] ............Light: ^ON^
+[ 20.395652600] --- End riesgo
+[ 20.411493500] >>> Riesgos
+[ 20.561435700] ............Light: ^ON^
+[ 20.582450400] --- End riesgo
+[ 20.5982916
+[ 20.604947000] >>> Distancia
+[ 20.628383900] --- End distacia00] >>> Riesgos
+[ 2
+[ 20.672635300] >>> Cabeza
+[ 20.687663200] --- End cabeza0.670618400] >>> Volante
+[ 20.717463300] --- End volante
+[ 20.733816000] ............# HeadPosition: -1 3
+[ 20.762865600] ............# Distance:  90
+[ 20.787999100] ............# Speed:  70
+[ 20.810246600] >>> DISTANCIA INSEGURA
+[ 20.830177700] ............# Steering:  0
+[ 20.853430600] --- End display
+[ 20.869783400] >>> Display.
+[ 20.884631900] ............Light: ^ON^
+[ 20.905677700] --- End rie
+[ 20.919982900] >>> Distancia
+[ 20.943424500] --- End distaciasgo
+[ 20.961825400] >>> Riesgos
+[ 21.065154400] >>> Volante
+[ 21.0811
+[ 21.086219200] >>> Cabeza
+[ 21.101079200] --- End cabeza30300] --- End volante
+[ 21.128183800] ............Light: ^ON^
+[ 21.149230000] --- End riesgo
+[ 21.165070900] >>> Riesgos
+[ 21.234705700] >>> Distancia
+[ 21.258116600] --- End distacia
+[ 21.314999900] ............Light: ^ON^
+[ 21.336014300] --- End riesgo
+[ 21.351855600] >>> Riesgos
+[ 21.428822300] >>> Volante
+[ 21.444797700] --- End volante
+[ 21.499406800] >>> Cabeza
+[ 21.514234800] --- End cabeza
+[ 21.530075900] ............Light: ^ON
+[ 21.550044300] >>> Distancia
+[ 21.573485400] --- End distacia^
+[ 21.591437500] --- End riesgo
+[ 21.607278200] >>> Riesgos
+[ 21.757221600] ............Light: ^ON^
+[ 21.778236000] --- End ries
+[ 21.793053200] >>> Volante
+[ 21.809060100] --- End volantego
+[ 21.826437200] >>> Riesgos
+[ 21.864767100] >>> Distancia
+[ 21.888396400] --- End distacia
+[ 21.905261600
+[ 21.912941300] >>> Cabeza
+[ 21.927800900] --- End cabeza] ............# HeadPosition:  1 3
+[ 21.965193300] ............# Distance:  65
+[ 21.990327300] ............# Speed:  85
+[ 22.012575200] >>> DISTANCIA INSEGURA
+[ 22.032506100] ............# Steering:  15
+[ 22.056271000] --- End display
+[ 22.072624600] >>> Display.
+[ 22.087472100] ............Light: ^ON^
+[ 22.108517600] --- End riesgo
+[ 22.124358200] >>> Riesgos
+[ 22.156752600] >>> Volante
+[ 22.172728200] --- End volante
+[ 22.189081200] >>> Distancia
+[ 22.212527500] --- End distacia
+[ 22.274288600] ............Light: ^ON^
+[ 22.295303600] --- End riesgo
+[ 22.311144200] >>> Riesgos
+[ 22.326128500] >>> Cabeza
+[ 22.340956500] --- End cabeza
+[ 22.461074600] ............Light: ^ON^
+[ 22.482088900] --- End riesgo
+[ 22.497930
+[ 22.504074400] >>> Distancia
+[ 22.521145400] >>> Volante
+[ 22.537121000] --- End volante
+[ 22.559340200] --- End distacia500] >>> Riesgos
+[ 22.647872800] ............Light: ^ON^
+[ 22.668887100] --- End riesgo
+[ 22.684728000] >>> Riesgos
+[ 22.739285200] >>> Cabeza
+[ 22.754114200] --- End cabeza
+[ 22.818797500] >>> Distancia
+[ 22.842409900] --- End distacia
+[ 22.859274800] ............Light: ^ON^
+[ 22.8803
+[ 22.885409900] >>> Volante
+[ 22.901416800] --- End volante20300] --- End riesgo
+[ 22.928521700] >>> Riesgos
+[ 23.078450400] 
+[ 23.087123300] ............# HeadPosition:  20 0
+[ 23.116684500] ............# Dis
+[ 23.134062000] >>> Distancia
+[ 23.157399400] >>> Cabeza
+[ 23.172227700] --- End cabeza
+[ 23.188069200] --- End distaciatance:  45
+[ 23.212721500] ............# Speed:  100
+[ 23.235479600] >>> PELIGRO COLISION
+[ 23.254386600] >>> Volante
+[ 23.270393500] --- End volante
+[ 23.286746600] ............# Steering:  5
+[ 23.309999100] --- End display
+[ 23.326352100] >>> Display.............Light: ^ON^
+[ 23.353546800] --- End riesgo
+[ 23.369387800] >>> Riesgos
+[ 23.448785500] >>> Distancia
+[ 23.472209916] --- End distacia
+[ 23.519398400] ............Light: _off_
+[ 23.540925200] --- End riesgo
+[ 23.556765800] >>> Riesgos
+[ 23.571102000] >>> Cabeza
+[ 23.585963300] --- End cabeza
+[ 23.622280204] >>> Volante
+[ 23.634061500] --- End volante
+[ 23.706777500] ............Light: _off_
+[ 23.728303500] --- End riesgo
+[ 23.744144800] >>> Riesgos
+[ 23.763478400] >>> Distancia
+[ 23.786902800] --- End distacia
+[ 23.894079400] ............Light: _off_
+[ 23.915605700] --- End riesgo
+[ 23.931446300] >>> Riesgos
+[ 23.
+[ 23.984795400] >>> CabezaCABEZA INCLINADA
+
+[ 24.008263100] --- End cabeza981753900] >>> Volante
+[ 24.037070100] --- End volante
+[ 24.078170700] >>> Distancia
+[ 24.101595700] --- End distacia
+[ 24.118461300] ............%BEEEEEEEEEEP 5
+[ 24.141559900] ............Light: _off_
+[ 24.163081700] !!!! Brake activated !!!!
+[ 24.185120300] --- End riesgo
+[ 24.200961200] >>> Riesgos
+[ 24.340653000] ............# HeadPosition:  45-3
+[ 24.370183600] ............
+[ 24.385000300] >>> Volan
+[ 24.398312400] >>> CabezaCABEZA INCLINADA
+
+[ 24.421781400] --- End cabezateVOLANTAZO BRUSCO
+
+[ 24.448883100] --- End volante
+[ 24.465267500] >>> Distancia
+[ 24.488716500] --- End distacia# Distance:  30
+[ 24.515898500] ............# Speed:  110
+[ 24.538657400] >>> DISTANCIA IMPRUDENTE
+[ 24.559612600] ............# Steering:  35
+[ 24.583377100] --- End display
+[ 24.599730000] >>> Display.
+[ 24.614577900] ............%BEEP 1
+[ 24.633580900] ............Light: _off_
+[ 24.655107400] --- End riesgo
+[ 24.670948300] >>> Riesgos
+[ 24.780002800] 
+[ 24.788676200] >>> Volante
+[ 24.80468290
+[ 24.811819800] >>> CabezaCABEZA INCLINADA
+
+[ 24.835288200] --- End cabeza0] --- End volante>>> Distancia
+[ 24.875118100] --- End distacia
+[ 24.891982800] ............%BEEEEEEP 3
+[ 24.913034100] ............Light: _off_
+[ 24.934561000] --- End riesgo
+[ 24.950401900] >>> Riesgos
+[ 25.100181800] ............%BEEEEEEP 3
+[ 25.121201600] ............Light: _off_
+[ 25.142728100] ---
+[ 25.152937200] >>> VolanteVOLANTAZO BRUSCO
+
+[ 25.177494000] --- End volante
+[ 25.193878100] >>> Distancia
+[ 25.217324900]
+[ 25.225486100] >>> CabezaCABEZA INCLINADA
+
+[ 25.248954900] --- End cabeza --- End distacia End riesgo
+[ 25.279163000] >>> Riesgos
+[ 25.428631100] ............%BEEP 1
+[ 25.447602900] ............Light: _off_
+[ 25.469129000] --- End riesgo
+[ 25.484969900] >>> Riesgos
+[ 25.508601300] 
+[ 25.517274600] >>> Volante
+[ 25.533280600] --- End volante>>> Distancia
+[ 25.564381200] --- End distacia
+[ 25.614030900] ............# HeadPosition:  47 
+[ 25.639087500] >>> CabezaCABEZA INCLINADA
+
+[ 25.662556200] --- End cabeza1
+[ 25.682916200] ............# Distance:  70
+[ 25.708049600] ............# Speed:  120
+[ 25.730809000] >>> DISTANCIA IMPRUDENTE
+[ 25.751764200] ............# Steering:  2
+[ 25.775017100] --- End display
+[ 25.791370100] >>> Display.
+[ 25.806218000] ............%BEEEEEEP 3
+[ 25.827268600] ............Light: _off_
+[ 25.84879510
+[ 25.855931800] >>> Distancia
+[ 2
+[ 25.881401200] >>> Volante
+[ 25.897408100] --- End volante5.879383900] --- End distacia0] --- End riesgo
+[ 25.937313400] >>> Riesgos
+[ 26.052275300] >>> CabezaCABEZA INCLINADA
+
+[ 26.075713500] --- End cabeza
+[ 26.091585900] ............%BEEEEEEP 3
+[ 26.112636600] ............Light: _off_
+[ 26.134163500] --- End riesgo
+[ 26.150004500] >>> Riesgos
+[ 26.170655200] >>> Distancia
+[ 26.194071400] --- End distacia
+[ 26.245100500] >>> Volante
+[ 26.261076600] --- End volante
+[ 26.299785700] ............%BEEEEEEP 3
+[ 26.320805600] ............Light: _off_
+[ 26.342332100] --- End riesgo
+[ 26.358172700] >>> Riesgos
+[ 26.465432400] >>> CabezaCABEZA INCLINADA
+
+[ 26.488869400] --- End cabeza
+[ 26.504742000] >>> Distancia
+[ 26.528193000] --- End distacia
+[ 26.545057800] ............%BEEEEEEP 3
+[ 26.566109200] ............Light: _off_
+[ 26.587636100] --- End riesgo
+[ 26.60347
+[ 26.609109100] >>> Volante
+[ 26.625116500] --- End volante6700] >>> Riesgos
+[ 26.753271800] ............%BEEEEEEP 3
+[ 26.774291700] ............Light: _off_
+[ 26.795818300] ---
+[ 26.806027900] ..........
+[ 26.819851600] >>> Distancia
+[ 26.843304000] --- End distacia..# HeadPosition:  45-3
+[ 26.
+[ 26.878947700] >>> CabezaCABEZA INCLINADA
+
+[ 26.902416500] --- End cabeza875906600] ............# Distance:  65
+[ 26.940381400] ............# Speed:  120
+[ 26.963140500] >>> DISTANCIA IMPRUDENTE
+[ 26.984095600] >>> Volante
+[ 27.000101800] --- End volante
+[ 27.016454800] ............# Steering:  2
+[ 27.039707700] --- End display
+[ 27.056060300] >>> Display. End riesgo
+[ 27.076540700] >>> Riesgos
+[ 27.134575100] >>> Distancia
+[ 27.157996200] --- End distacia
+[ 27.226321900] ............%BEEEEEEP 3
+[ 27.247341400] ............Light: _off_
+[ 27.268867600] --- End riesgo
+[ 27.284708500
+[ 27.292388800] >>> CabezaCABEZA INCLINADA
+
+[ 27.315857200] --- End cabeza] >>> Riesgos
+[ 27.347794700] >>> Volante
+[ 27.363770200] --- End volante
+[ 27.434489500] ............%
+[ 27.449818500] >>> Distancia
+[ 27.473270900] --- End distaciaBEEEEEEP 3
+[ 27.495826300] ............Light: _off_
+[ 27.517352500] --- End riesgo
+[ 27.533193200] >>> Riesgos
+[ 27.682988100] ............%BEEEEEEP 3
+[ 2
+[ 27.706025300] >>> CabezaCABEZA INCLINADA
+
+[ 27.729494300] --- End cabeza
+[ 27.745366600] >>> Volante
+[ 27.761373800] --- End volante
+[ 27.777727300] >>> Distancia
+[ 27.801184500] --- End distacia7.704008300] ............Light: _off_
+[ 27.837559200] --- End riesgo
+[ 27.853400600] >>> Riesgos
+[ 28.003018300] ............%BEEEEEEEEEEP 5
+[ 28.026085700] ............Light: _off_
+[ 28.047608100] !!!! Brake activated !!!!
+[
+[ 28.070640300] ............# HeadPosition
+[ 28.092656100] >>> Distancia
+[ 28.109709900] >>>
+[ 28.119918815] >>> CabezaCABEZA INCLINADA
+
+[ 28.143386700] --- End cabeza Volante
+[ 28.165025300] --- End volante
+[ 28.187321600] --- End distaci:  47 1
+[ 28.211219900] ............# Distance:  30
+[ 28.236354100] ............# Speed:  110
+[ 28.259111900] >>> PELIGRO COLISION
+[ 28.278018800] ............# Steering:  0
+[ 28.301271600] --- End display
+[ 28.317624800] >>> Display. 28.069647000] --- End riesgo
+[ 28.347320400] >>> Riesgos
+[ 28.407392700] >>> Distancia
+[ 28.430817100] --- End distacia
+[ 28.496938500] ............%BE
+[ 28.513291900] >>> Volante
+[ 28.52
+[ 28.533361900] >>> CabezaCABEZA INCLINADA
+
+[ 28.556829800] --- End cabeza9297200] --- End volanteEEEEEEEEEP 5
+[ 28.591704800] ............Light: _off_
+[ 28.613226900] !!!! Brake activated !!!!
+[ 28.635265100] --- End riesgo
+[ 28.651106000] >>> Riesgos
+[ 28.722084600] >>> Distancia
+[ 28.745509500] --- End distacia
+[ 28.800724100] ............%BEEEEEEEEEEP 5
+[ 28.823792200] ............Light: _off_
+[ 28.845313900] !!!! Brake activated !!!!
+[ 28.867351800] ---
+[ 28.877560700] >>> Volante
+[ 28.893568300] --- End volante End riesgo
+[ 28.915552900] >>> Riesgos
+[ 28.946473600] >>> CabezaCABEZA INCLINADA
+
+[ 28.969911200] --- End cabeza
+[ 29.036775800] >>> Distancia
+[ 29.060199200] --- End distacia
+[ 29.077064000] ............%BEEEEEEEEEEP 5
+[ 29.100163300] ............Light: _off_
+[ 29.121685800] !!!! Brake activated !!!!
+[ 29.143724400] --- End riesgo
+[ 29.159565300] >>> Riesgos
+[ 29.241260500] >>> Volante
+[ 29.257236900] --- End volante
+[ 29.309183400] ............%BEEEEEEEEEEP 5
+[ 29.331957200] ............# HeadPosi
+[ 29.351894700]
+[ 29.360086500] >>> CabezaCABEZA INCLINADA
+
+[ 29.383554500] --- End cabeza >>> Distancia
+[ 29.414686300] --- End distaciation:  46-3
+[ 29.441144600] ............# Distance:  50
+[ 29.466278000] ............# Speed:  110
+[ 29.489036800] >>> DISTANCIA IMPRUDENTE
+[ 29.509992700] ............# Steering: -1
+[ 29.533244500] --- End display
+[ 29.549598100] >>> Display.
+[ 29.564445800] ............Light: _off_
+[ 29.585998300] !!!! Brake activated 
+[ 29.605423600] >>> Volante
+[ 29.621430900] --- End volante!!!!
+[ 29.640401400] --- End riesgo
+[ 29.656242600] >>> Riesgos
+[ 29.705958800] >>> Distancia
+[ 29.729374800] --- End distacia
+[ 29.773274300] >>> CabezaCABEZA INCLINADA
+
+[ 29.796712200] --- End cabeza
+[ 29.812585100] ............%BEEEEEEP 3
+[ 29.833635000] ............Light: _off_
+[ 29.855161900] --- End riesgo
+[ 29.871002500] >>> Riesgos
+[ 29.969122302] >>> Volante
+[ 29.985097700] --- End volante
+[ 30.020689800] >>> Distancia
+[ 30.044093100] --- End distacia
+[ 30.060958000] ............%BEEEEP 2
+[ 30.080985300] ............Light: _off_
+[ 30.102511500] --- End riesgo
+[ 30.118352900] >>> Riesgos
+[ 30.186431400] >>> Cabeza
+[ 30.201260500] --- End cabeza
+[ 30.268282700] ............Light: ^ON^
+[ 30.289297000] --- End riesgo
+[ 30.305137600] >>> Riesgos
+[ 30.332790800] >>> Volante
+[ 30.348766000] --- End volante
+[ 30.365119500] >>> Distancia
+[ 30.388554200] --- End distacia
+[ 30.455068300] ............Light: ^ON^
+[ 30.476083400] --- End riesgo
+[ 30.491924700] >>> Riesgos
+[ 30.563898400] ............# HeadPosition:  2 1
+[ 30.59291730
+[ 30.600054000] >>> Cabeza
+[ 30.614914200] --- End cabeza0] ............# Distance:  80
+[ 30.648751700] ............# Speed:  70
+[ 30.670999600] >>> DISTANCIA INSEGURA
+[ 30.690930
+[ 30.697074700] >>> Volante
+[ 30.713082500] --- End volante600] >>> Distancia
+[ 30.746727500] --- End distacia
+[ 30.763592800] ............# Steering:  0
+[ 30.786845400] --- End display
+[ 30.803199000] >>> Display.
+[ 30.818046000] ............Light: ^ON^
+[ 30.839092200] --- End riesgo
+[ 30.854932800] >>> Riesgos
+[ 31.004862900] 
+[ 31.013536100] >>> Cabeza
+[ 31.028395200] --- End cabeza
+[ 31.044236200] >>> Distancia
+[ 31.061289900] >>> Volante
+[ 31.077265800] --- End volante
+[ 31.099548800] --- End distacia............Light: ^ON^
+[ 31.128759900] --- End riesgo
+[ 31.144600600] >>> Riesgos
+[ 31.294544000] ............Light: ^ON^
+[ 31.315559100] --- End riesgo
+[ 31.331400600] >>> Riesgos
+[ 31.358959300] >>> Distancia
+[ 31.382368900] --- End distacia
+[ 3
+[ 31.426975200] >>> Cabeza
+[ 31.441833700] --- End cabeza1.424957900] >>> Volante
+[ 31.471632600] --- End volante
+[ 31.487985600] ............Light: ^ON^
+[ 31.509030800] --- End riesgo
+[ 31.524871815] >>> Riesgos
+[ 31.673651400] >>> Distancia
+[ 31.697106700] --- End distacia
+[ 31.713971500] ............Light: ^ON^
+[ 31.735017200] --- End riesgo
+[ 31.750857900] >>> Riesgos
+[ 31
+[ 31.820029000] >>> Volante
+[ 31.836
+[ 31.840612500] >>> Cabeza
+[ 31.855471700] --- End cabeza035200] --- End volante.817499900] ............# HeadPosition:  1-3
+[ 31.909578100] ............# Distance:  70
+[ 31.934711700] ............# Speed:  80
+[ 31.956959300] >>> DISTANCIA INSEGURA
+[ 31.976890500] ......
+[ 31.988666300] >>> Distancia
+[ 32.012111000] --- End distacia......# Steering:  15
+[ 32.040964600] --- End display
+[ 32.057317800] >>> Display.
+[ 32.072166200] ............Light: ^ON^
+[ 32.093211700] --- End riesgo
+[ 32.109053100] >>> Riesgos
+[ 32.183728300] >>> Volante
+[ 32.199704100] --- End volante
+[ 32.253800400] >>> Cabeza
+[ 32.268629300] --- End cabeza
+[ 32.284470900] ............Light: ^O
+[ 32.303925900] >>> Distancia
+[ 32.327370800] --- End distaciaN^
+[ 32.345830200] --- End riesgo
+[ 32.361671100] >>> Riesgos
+[ 32.511613200] ............Light: ^ON^
+[ 32.532628300] --- End riesg
+[ 32.547957700] >>> Volante
+[ 32.563963300] --- End volanteo
+[ 32.580828200] >>> Riesgos
+[ 32.618649400] >>> Distancia
+[ 32.642063200] --- End distacia
+[ 32.666957200] >>> Cabeza
+[ 32.681784600] --- End cabeza
+[ 32.730767600] ............Light: ^ON^
+[ 32.751782300] --- End riesgo
+[ 32.767622900] >>> Riesgos
+[ 32.911656700] >>> Volante
+[ 32.927632200] --- End volante
+[ 32.943985700] >>> Distancia
+[ 32.967611000] --- End distacia
+[ 32.984476300] ............Light: ^ON^
+[ 33.005521400] --- End riesgo
+[ 33.021362700] >>> Riesgos
+[ 33.071618500] .
+[ 33.080803600] >>> Cabeza
+[ 33.095663500] --- End cabeza...........# HeadPosition:  15 3
+[ 33.131850300] ............# Distance:  40
+[ 33.156984400] ............# Speed:  98
+[ 33.179232200] >>> DISTANCIA INSEGURA
+[ 33.199163100] ............# Steering:  5
+[ 33.222416100] --- End display
+[ 33.238769300] >>> Display.
+[ 33.25361
+[ 33.259248900] >>> Distancia
+[ 33.276301500] >>> Volante
+[ 33.292277900] --- End volante
+[ 33.314508500] --- End distacia6900] ............Light: ^ON^
+[ 33.346787000] --- End riesgo
+[ 33.362628300] >>> Riesgos
+[ 33.493991200] >>> Cabeza
+[ 33.508819500] --- End cabeza
+[ 33.524660900] ............Light: _off_
+[ 33.546218000] --- End riesgo
+[ 33.562058900] >>> Rie
+[ 33.574346600] >>> Distancia
+[ 33.597803700] --- End distaciasgos
+[ 33.639970600] >>> Volante
+[ 33.655946200] --- End volante
+[ 33.712069700] ............Light: _off_
+[ 33.733595700] --- End riesgo
+[ 33.749436400] >>> Riesgos
+[ 33.889071200] >>> Distancia
+[ 33.912305700] >>> CabezaCABEZA INCLINADA
+
+[ 33.935742900] --- End cabeza
+[ 33.951615200] --- End distacia
+[ 33.968511000] ............%BEEEEEEEEEEP 5
+[ 33.991610400] .......
+[ 34.003867900] >>> Volante
+[ 34.019873500] --- End volante.....Light: _off_
+[ 34.045496300] !!!! Brake activated !!!!
+[ 34.067534900] --- End riesgo
+[ 34.083376200] >>> Riesgos
+[ 34.203763400] >>> Distancia
+[ 34.227183200] --- End distacia
+[ 34.244048600] .
+[ 34.253264500] ............# HeadPosition:  45-3
+[ 34.282825200] ............# Distance:  40
+[ 34.307958400] ............# Spee
+[ 34.325847100] >>> CabezaCABEZA INCLINADA
+
+[ 34.349314700] --- End cabezad:  11
+[ 34.368259300] >>> VolanteVOLANTAZO BRUSCO
+
+[ 34.392795500] --- End volante0
+[ 34.410991400] >>> DISTANCIA IMPRUDENTE
+[ 34.431946700] ............# Steering:  35
+[ 34.455711300] --- End display
+[ 34.472064300] >>> Display............%BEEEEEEP 3
+[ 34.498747300] ............Light: _of
+[ 34.518684900] >>> Distancia
+[ 34.542128400] --- End distaciaf_
+[ 34.560588100] --- End riesgo
+[ 34.576428700] >>> Riesgos
+[ 34.7258978
+[ 34.73252330
+[ 34.739690700] >>> CabezaCABEZA INCLINADA
+
+[ 34.763159000] --- End cabeza0] >>> Volante
+[ 34.787870800] --- End volante00] ............%BEEP 1
+[ 34.816571100] ............Light
+[ 34.833948100] >>> Distancia
+[ 34.857392600] --- End distacia: _off_
+[ 34.878412100] --- End riesgo
+[ 34.894252700] >>> Riesgos
+[ 35.044034400] ............%BEEEEEEP 3
+[ 35.065054600] ............Light: _off_
+[ 35.086580800] --- End riesgo
+[ 35.102422100] >>> Riesgos
+[ 35.135563400] >>> VolanteVOLANTAZO BRUSCO
+
+[ 35.160073800] >>> CabezaCABEZA INCLINADA
+
+[ 35.183540900] --- End cabeza
+[ 35.199412900] --- End volante
+[ 35.215797200] >>> Distancia
+[ 35.239243900] --- End distacia
+[ 35.256108900] ............%BEEP 1
+[ 35.275111600] ............Light: _off_
+[ 35.296637900] --- End riesgo
+[ 35.312479300] >>> Riesgos
+[ 35.461947100] ............%BEEP 1
+[ 35.48091
+[ 35.486520100] .........
+[ 35.499832700] >>> Volante
+[ 35.515838700] --- End volante
+[ 35.532192200] >>> Distancia
+[ 35.555643500] --- End distacia..
+[ 35.573532800] >>> CabezaCABEZA INCLINADA
+
+[ 35.597000600] --- End cabeza.# HeadPosition:  47 3
+[ 35.628098700] ............# Distance:  70
+[ 35.653232200] ............# Speed:  120
+[ 35.675991000] >>> DISTANCIA IMPRUDENTE
+[ 35.696946000] ............# Steering:  2
+[ 35.720199300] --- End display
+[ 35.736552300] >>> Display.9400] ............Light: _off_
+[ 35.767325500] --- End riesgo
+[ 35.783166200] >>> Riesgos
+[ 35.846915800] >>> Distancia
+[ 35.863936900] >>> Volante
+[ 35.879913000] --- End volante
+[ 35.902142800] --- End distacia
+[ 35.932872700] ............%BEEEEEEP 3
+[ 35.953893000] ............Light: _off_
+[ 35.975423700] --- En
+[ 35.987169300] >>> CabezaCABEZA INCLINADA
+
+[ 36.010636200] --- End cabezad riesgo
+[ 36.030604400] >>> Riesgos
+[ 36.161608200] >>> Distancia
+[ 36.185222400] --- End distacia
+[ 36.202087900] ............%BEEEEEEP 3
+[ 36.2231
+[ 36.228227400] >>> Volante
+[ 36.244233900] --- End volante37800] ............Light: _off_
+[ 36.277024300] --- End riesgo
+[ 36.292864900] >>> Riesgos
+[ 36.400355800] >>> CabezaCABEZA INCLINADA
+
+[ 36.423793600] --- End cabeza
+[ 36.442647200] ............%BEEEEEEP 3
+[ 36.463667000] .........
+[ 36.476948100] >>> Distancia
+[ 36.504594604] --- End distacia...Light: _off_
+[ 36.525515000] --- End riesgo
+[ 36.541355600] >>> Riesgos
+[ 36.591926300] >>> Volante
+[ 36.607902800] --- End volante
+[ 36.691137700] ............%BEEEEEEP 3
+[ 36.712157600] ............Light: _off_
+[ 36.733683800] --- End riesgo
+[ 
+[ 36.751061000] ............# HeadPosition:  45-3
+[ 36.780622100] ......
+[ 36.792367200] >>> Distancia
+[ 36.815716200] >>> CabezaCABEZA INCLINADA
+
+[ 36.839153100] --- End cabeza
+[ 36.855025900] --- End distacia......# Distance:  70
+[ 36.885310300] ............# Speed:  120
+[ 36.908069400] >>> DISTANCIA IMPRUDENTE
+[ 36.929025300] ............# Steering:  0
+[ 36.9
+[ 36.955829900] >>> Volante
+[ 36.971836400] --- End volante52277100] --- End display
+[ 37.000989300] >>> Display.36.749525100] >>> Riesgos
+[ 37.028637800] ............%BEEEEEEP 3
+[ 37.049688400] ............Light: _off_
+[ 37.071214500] --- End riesgo
+[ 37.087055100] >>> Riesgos
+[ 37.107089700] >>> Distancia
+[ 37.130512700] --- End distacia
+[ 37.228872702] >>> CabezaCABEZA INCLINADA
+
+[ 37.252310100] --- End cabeza
+[ 37.268182800] ............%BEEEEEEP 3
+[ 37.289233000] ............Light: _off_
+[ 37.310759900] -
+[ 37.319945100] >>> Volante
+[ 37.335951300] --- End volante-- End riesgo
+[ 37.358960100] >>> Riesgos
+[ 37.421782800] >>> Distancia
+[ 37.445203900] --- End distacia
+[ 37.508741500] ............%BEEEEEEP 3
+[ 37.529761000] ............Light: _off_
+[ 37.551287200] --- End riesgo
+[ 37.567127800] >>> Riesgos
+[ 37.642029200] >>> CabezaCABEZA INCLINADA
+
+[ 37.665466200] --- End cabeza
+[ 37.683644500] >>> Volante
+[ 37.699620300] --- End volante
+[ 37.716909900] ............%BEEEEEEP 
+[ 37.736847000] >>> Distancia
+[ 37.760304600] --- End distacia3
+[ 37.778262000] ............Light: _off_
+[ 37.799788532] --- End riesgo
+[ 37.815629900] >>> Riesgos
+Program exited normally.
+tsim> tsim> tsim> 
