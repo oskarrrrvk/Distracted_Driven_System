@@ -26,53 +26,65 @@ package body add is
    Protected body Measures is
       function Get_Distance return Distance_Samples_Type is
       begin 
+         Execution_Time(Milliseconds(6));
          return distance;
       end Get_Distance;
       
       function Get_Speed return Speed_Samples_Type is
       begin
+         Execution_Time(Milliseconds(4));
          return speed;
       end Get_Speed;
       
       function Get_Cabeza return HeadPosition_Samples_Type is
       begin
+         Execution_Time(Milliseconds(3));
          return cabeza;
       end Get_Cabeza;
       
       function Get_Volante return Steering_Samples_Type is
       begin
+         Execution_Time(Milliseconds(2));
          return Wheel;
       end Get_Volante;
       
       procedure Set_Distance(dist: in Distance_Samples_Type) is
       begin
+         Execution_Time(Milliseconds(7));
          distance := dist;
       end Set_Distance;
       
       procedure Set_Speed(spd: in Speed_Samples_Type) is
       begin
+         Execution_Time(Milliseconds(8));
          speed := spd;
       end Set_Speed;
       
       procedure Set_Cabeza(cab: in HeadPosition_Samples_Type) is
       begin
+         Execution_Time(Milliseconds(1));
          cabeza:= cab;
       end Set_Cabeza;
       
       procedure Set_Volante(vol: in Steering_Samples_Type)is
       begin
+         Execution_Time(Milliseconds(3));
          Wheel:= vol;
       end Set_Volante;
       
       function Calculate_Security_Distance return Distance_Samples_Type is
       begin
+         Execution_Time(Milliseconds(4));
          return Distance_Samples_Type((speed/10) ** 2);
       end Calculate_Security_Distance; 
    end Measures;
+   
 ------------------------------------------------------------------------------------------------------
+    
     Protected body Sign is
       procedure Aviso_Cabeza(cab: in HeadPosition_Samples_Type; cont: in out Integer) is
       begin
+         Execution_Time(Milliseconds(3));
          if cab(x)>=30 or cab(x)<= -30 then
             cont:= cont + 1;
             if cont>= 2 then
@@ -89,16 +101,19 @@ package body add is
       
        procedure Set_Position(i: in Integer)is
        begin
+          Execution_Time(Milliseconds(4));
           pos:= i;
        end Set_Position;
        
        function Get_Position return Integer is
        begin
+          Execution_Time(Milliseconds(8));
           return pos;
        end Get_Position;
        
        procedure Calculate_Dangerous_Distance(dist: in Distance_Samples_Type; security_dist: in Distance_Samples_Type) is
       begin
+         Execution_Time(Milliseconds(2));
          for i in 1..3 loop
             if dist < (security_dist/Distance_Samples_Type(i)) then
                 Set_Position(i);
@@ -108,6 +123,7 @@ package body add is
       
       procedure take_Alarm is
       begin
+         Execution_Time(Milliseconds(1));
          if pos = 3 then
             Starting_Notice("PELIGRO COLISION");
          elsif pos = 2 then
@@ -121,6 +137,7 @@ package body add is
       
       procedure Turn_Light is
       begin
+         Execution_Time(Milliseconds(7));
          if pos = 1 then
             Light(On);
          end if;
@@ -129,6 +146,7 @@ package body add is
        
       procedure Giro_Brusco(whlB: in Steering_Samples_Type; whlA: in Steering_Samples_Type) is
       begin
+         Execution_Time(Milliseconds(3));
          if ((whlA+20) < whlB or (whlA-20) > whlB) then
             Put_Line("VOLANTAZO BRUSCO");
             rude := True;
@@ -139,11 +157,13 @@ package body add is
       
       function Get_Rude return Boolean is
       begin
+          Execution_Time(Milliseconds(2));
           return rude;
       end Get_Rude; 
       
       function Get_Head_Warning return Boolean is
       begin
+          Execution_Time(Milliseconds(1));
           return head_warning;
       end Get_Head_Warning;
    end Sign;   
@@ -162,16 +182,20 @@ package body add is
       cab: HeadPosition_Samples_Type;
       next_delay: Time;
       cont: Integer:= 0;
+      I : Time;
+      D : Time_span;
    begin
       loop
-
+	 I := clock;
          Starting_Notice("Cabeza");
          next_delay:= Clock + Milliseconds(400);
          Reading_HeadPosition(cab);
          Measures.Set_Cabeza(cab);
          Sign.Aviso_Cabeza(Measures.Get_Cabeza, cont);
-         Finishing_Notice("End cabeza");
+         D := clock - I;
+         Kernel.Serial_Output.Put("WCET Cabeza" & Duration'Image(To_Duration(D)));
          delay until next_delay;
+         Finishing_Notice("End cabeza");
       end loop;
    end Head_Security;
     
@@ -180,8 +204,11 @@ package body add is
       dist:  Distance_Samples_Type;
       security_dist: Distance_Samples_Type;
       next_delay: Time;
+      I : Time;
+      D : Time_span;
    begin
-      loop	    
+      loop
+         I := clock;	    
          Starting_Notice("Distancia");
          next_delay := Clock + milliseconds(300);
          Reading_Speed (speed);
@@ -190,36 +217,47 @@ package body add is
          Measures.Set_Speed(speed);
          security_dist := Measures.Calculate_security_distance;
          Sign.Calculate_Dangerous_Distance(dist,security_dist);
-         Finishing_Notice("End distacia");
+         D := clock - I;
+         Kernel.Serial_Output.Put("WCET Duration" & Duration'Image(To_Duration(D)));
          delay until next_delay;
+         Finishing_Notice("End distacia");
       end loop;
    end Distance;
 
    task body Volante_Steering is
       whl_B,whl_A: Steering_Samples_Type;
       next_delay: Time;
+      I : Time;
+      D : Time_span;
    begin
       Reading_Steering(whl_B);
       Measures.Set_Volante(whl_B);
       loop
+         I := clock;
          Starting_Notice("Volante");
          next_delay := Clock + milliseconds(350);
          Reading_Steering(whl_A);
          Sign.Giro_Brusco(Measures.Get_Volante,Whl_A);
          Measures.Set_Volante(Whl_A);
-         Finishing_Notice("End volante");
+         D := clock - I;
+         Kernel.Serial_Output.Put("WCET Volante" & Duration'Image(To_Duration(D)));
          delay until next_delay;
+         Finishing_Notice("End volante");
       end loop;
    end Volante_Steering;
    
    task body Risk is
       next_delay: Time;
       cont: Integer := 1;
+      I : Time;
+      D : Time_span;
    begin
+
       loop 
          next_delay := Clock + Milliseconds(150);
          Starting_Notice("Riesgos");         
          delay until next_delay;
+         I := clock;
          if Sign.Get_Rude = True then
             Beep(1);
             Light(Off); 
@@ -241,6 +279,8 @@ package body add is
          else 
             Light(Off);           
          end if;
+         D := clock - I;
+         Kernel.Serial_Output.Put("WCET Risk" & Duration'Image(To_Duration(D)));
          Finishing_Notice("End riesgo");
       end loop;
    end Risk;
@@ -248,16 +288,21 @@ package body add is
    task body Display is
       cont: Integer:= 0;
       next_delay: Time;
+      I : Time;
+      D : Time_span;
    begin 
       loop
+         I := clock;
       	 Starting_Notice("Display.");
-         next_delay := Clock + Milliseconds(1000);        
-         delay until next_delay;
+         next_delay := Clock + Milliseconds(1000); 
          Display_HeadPosition_Sample(Measures.Get_Cabeza);
          Display_Distance (Measures.Get_Distance);
          Display_Speed (Measures.Get_Speed);
          Sign.take_Alarm;  
          Display_Steering(Measures.Get_Volante);
+         D := clock - I;
+         Kernel.Serial_Output.Put("WCET Display" & Duration'Image(To_Duration(D)));
+         delay until next_delay;
 	 Finishing_Notice("End display");
       end loop;
    end Display;

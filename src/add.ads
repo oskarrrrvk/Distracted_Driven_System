@@ -12,7 +12,9 @@ package add is
   ---Protected Objects---
   -----------------------
   
+  
   protected Sign is 
+     pragma Priority(System.Priority'First + 5);
      procedure Aviso_Cabeza(cab: in HeadPosition_Samples_Type; cont: in out Integer);
      procedure Calculate_Dangerous_Distance(dist: in Distance_Samples_Type; security_dist: in Distance_Samples_Type);
      procedure take_Alarm;
@@ -29,6 +31,7 @@ package add is
 
 
    protected Measures is
+      pragma Priority(System.Priority'First + 5);
       function  Get_Distance return Distance_Samples_Type;
       function  Get_Speed return Speed_Samples_Type; 
       function  Get_Cabeza return HeadPosition_Samples_Type;
@@ -63,7 +66,7 @@ package add is
   end Distance;
 
   task Display is
-      pragma Priority (System.Priority'First + 2);
+      pragma Priority (System.Priority'First + 1);
   end Display;
 
   task Head_Security is 
@@ -71,11 +74,11 @@ package add is
   end Head_Security;
   
   task Volante_Steering is
-      pragma Priority(System.Priority'First + 4);
+      pragma Priority(System.Priority'First + 2);
    end Volante_Steering;
    
    task Risk is
-      pragma Priority(System.Priority'First + 1);
+      pragma Priority(System.Priority'First + 4);
    end Risk;
    
 end add;
