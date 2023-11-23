@@ -1,0 +1,11 @@
+task set Times with 5 tasks and 2 locks is 
+    --Locks
+    lock Sign;
+    lock Measures;
+    --Tasks
+    task Head is periodic (5,400,0,0,26,0,0,100,0) uses Sign(3), Measures(1);
+    task Risk is periodic (4,150,0,0,61,0,0,150,0) uses Sign (8), Measures (4);
+    task Display is periodic (1,1000,0,0,17,0,0,1000,0) uses Sign (1), Measures (6);
+    task Distance is periodic (3,300,0,0,65,0,0,300,0) uses Sign (2), Measures (8);
+    task wheel is periodic (2,350,0,0,31,0,0,350,0) uses Sign (3), Measures (3);
+end Times;
